@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue Book</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="bg-circle"></div>
+		<div class="bg-circle"></div>
+		<div class="bg-rectangle"></div>
+		<h1>Issue Book</h1>
+		<form action="issueTheBook" method="post">
+			<input type="text" name="bookNum" placeholder="Book Number" required><br>
+			<input type="text" name="studentId" placeholder="Student ID" required><br>
+			<input type="text" name="studentName" placeholder="Student Name"
+				required><br> <input type="text" name="studentContact"
+				placeholder="Student Contact" required><br>
+			<button type="submit" class="btn">Issue Book</button>
+			<a href="librarianPanel" class="btn">Back to Librarian Panel</a> <a
+				href="logout" class="btn">Logout</a>
+		</form>
+	</div>
+</body>
+</html>

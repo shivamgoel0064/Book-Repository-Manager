@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Management System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="bg-circle"></div>
+		<div class="bg-circle"></div>
+		<div class="bg-rectangle"></div>
+		<h1>Librarian Data</h1>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Address</th>
+					<th>City</th>
+					<th>Contact</th>
+					<!-- Add more columns as needed -->
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr th:each="librarian : ${librarians}">
+					<td th:text="${librarian.name}" />
+					<td th:text="${librarian.email}" />
+					<td th:text="${librarian.address}" />
+					<td th:text="${librarian.city}" />
+					<td th:text="${librarian.contact}" />
+				</tr>
+
+			</tbody>
+		</table>
+
+		<a href="adminPanel" class="btn">Back to Admin Panel</a> 
+		<a href="logout"	class="btn">Logout</a>
+		<!-- Add logout link -->
+	</div>
+</body>
+</html>

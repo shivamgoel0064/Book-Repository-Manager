@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #2980b9, #6dd5fa);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 750px;
+    width: 90%;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 50px;
+    margin-top: -10px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribute buttons evenly */
+    gap: 20px; /* Space between buttons */
+}
+
+.btn {
+    margin: 0px 20px;
+    padding: 14px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #3d8740;
+}
+
+/* Background design */
+.bg-circle {
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    background-color: #f9f9f9;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.bg-circle:nth-child(2) {
+    top: auto;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-rectangle {
+    position: absolute;
+    top: 20%;
+    right: -80px;
+    background-color: #f9f9f9;
+    width: 160px;
+    height: 250px;
+    z-index: -1;
+    transform: rotate(45deg);
+    opacity: 0.8;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+	width: calc(100% - 24px);
+	padding: 14px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #f0f0f0;
+}
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+th {
+	background-color: #f2f2f2;
+}

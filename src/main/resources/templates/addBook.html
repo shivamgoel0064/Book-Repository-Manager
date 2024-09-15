@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Book</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="bg-circle"></div>
+		<div class="bg-circle"></div>
+		<div class="bg-rectangle"></div>
+		<h1>Add Book</h1>
+		<form action="saveBook" method="post">
+			<input type="text" name="bookNum" placeholder="Book Number" required><br>
+			<input type="text" name="bookName" placeholder="Name" required><br>
+			<input type="text" name="author" placeholder="Author" required><br>
+			<input type="text" name="publisher" placeholder="Publisher" required><br>
+			<input type="number" name="quantity" placeholder="Quantity" required><br>
+			<button type="submit" class="btn">Add Book</button>
+			<a href="librarianPanel" class="btn">Back to Librarian Panel</a> 
+			<a href="logout" class="btn">Logout</a>
+		</form>
+	</div>
+</body>
+</html>

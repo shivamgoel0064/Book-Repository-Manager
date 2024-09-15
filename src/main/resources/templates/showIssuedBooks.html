@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issued Books Data</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="bg-circle"></div>
+		<div class="bg-circle"></div>
+		<div class="bg-rectangle"></div>
+		<h1>Issued Books Data</h1>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Book Number</th>
+					<th>Student ID</th>
+					<th>Student Name</th>
+					<th>Student Contact</th>
+					<!-- Add more columns as needed -->
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="issuedBook : ${issuedBooks}">
+					<td th:text = "${issuedBook.bookNum}"></td>
+					<td th:text = "${issuedBook.studentId}"></td>
+					<td th:text = "${issuedBook.studentName}"></td>
+					<td th:text = "${issuedBook.studentContact}"></td>
+					<!-- Add more columns as needed -->
+				</tr>
+			</tbody>
+		</table>
+
+		<a href="librarianPanel" class="btn">Back to Librarian Panel</a>
+		<a href="logout" class="btn">Logout</a> <!-- Add logout link -->
+	</div>
+</body>
+</html>
